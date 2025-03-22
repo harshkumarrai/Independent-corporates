@@ -1,0 +1,116 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .navbar h1 {
+    font-size: 2rem;
+  }
+  
+  .navbar ul {
+    display: flex;
+  }
+  
+  .navbar ul li {
+    margin-left: 1rem;
+  }
+  
+  .navbar ul li a {
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .navbar ul li a:hover {
+    color: #007bff;
+  }
+  
+  /* Landing Section Styles */
+  .landing {
+    position: relative;
+    background: url('https://img.freepik.com/free-vector/blue-polygon-dark-background-social-template_53876-116080.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721088000&semt=ais_user') no-repeat center center/cover;
+    height: 100vh;
+  }
+  
+  .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .landing-inner {
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .x-large {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .lead {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .buttons .btn {
+    margin: 0 0.5rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 0.4rem 1.3rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }

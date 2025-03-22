@@ -1,0 +1,162 @@
+/* Myprofile.css */
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .navbar h1 {
+    font-size: 2rem;
+  }
+  
+  .navbar ul {
+    display: flex;
+  }
+  
+  .navbar ul li {
+    margin-left: 1rem;
+  }
+  
+  .navbar ul li a {
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .navbar ul li a:hover {
+    color: #007bff;
+  }
+  
+  /* Myprofile Styles */
+  .container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    overflow: hidden;
+    padding: 0 2rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.4rem 1.3rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+  .btn-light {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .profile-grid {
+    display: grid;
+    grid-template-areas:
+      'top'
+      'github';
+    grid-gap: 2rem;
+  }
+  
+  .profile-top {
+    grid-area: top;
+    text-align: center;
+  }
+  
+  .round-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .large {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  .lead {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .bg-primary {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .p-2 {
+    padding: 2rem;
+  }
+  
+  .profile-github {
+    grid-area: github;
+  }
+  
+  .text-primary {
+    color: #007bff;
+  }
+  
+  .my-1 {
+    margin: 1rem 0;
+  }
+  
+  .repo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .form .form-group {
+    margin: 1rem 0;
+  }
+  
+  .form input[type='text'] {
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
